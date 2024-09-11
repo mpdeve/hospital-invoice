@@ -325,7 +325,7 @@ const totalAdvancePaid = caseData?.AdvanceAmounts.reduce((total, advance) => {
     }
 
     const convertUTCToIST = (utcDateString) => {
-        return moment(utcDateString).tz('Asia/Kolkata').format('DD/MM/YYYY hh:mm A');
+        return moment(utcDateString).tz('Asia/Kolkata').format('hh:mm A');
     };
 
     const convertUTCToISTDate = (utcDateString) => {
